@@ -1,13 +1,12 @@
-import 'package:eye_ear/sound1.dart';
-import 'package:eye_ear/sound1.dart';
 import 'package:flutter/material.dart';
+import 'package:eye_ear/list.dart';
 
-class Ear_test extends StatefulWidget {
+class Eye_test extends StatefulWidget {
   @override
-  _Ear_testState createState() => _Ear_testState();
+  _Eye_testState createState() => _Eye_testState();
 }
 
-class _Ear_testState extends State<Ear_test> {
+class _Eye_testState extends State<Eye_test> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +19,7 @@ class _Ear_testState extends State<Ear_test> {
               width: 320,
               height: 120,
               child: Text(
-                "Please use headset for accurate results",
+                "Place the mobile device 1 meter away at eye level",
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
@@ -33,7 +32,7 @@ class _Ear_testState extends State<Ear_test> {
               width: 200,
               height: 200,
               child: Icon(
-                Icons.headset,
+                Icons.remove_red_eye,
                 size: 80,
                 color: Colors.black,
               ),
@@ -67,7 +66,7 @@ class _Ear_testState extends State<Ear_test> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Sound1()),
+                        MaterialPageRoute(builder: (context) => Eye_list()),
                       );
                     },
                   ),
